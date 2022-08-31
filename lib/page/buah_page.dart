@@ -30,8 +30,8 @@ class BuahPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Card(
                   elevation: 7,
-                  color: Colors.yellow[700],
-                  shadowColor: Colors.yellow,
+                  color: Colors.blueGrey[500],
+                  shadowColor: Colors.blueGrey,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -40,14 +40,14 @@ class BuahPage extends StatelessWidget {
                           buah.gambarBuah ?? "assets/gambar/noimage.png",
                           width: 100,
                           height: 100,
-                          fit: BoxFit.fill,
+                          fit: BoxFit.cover,
                         ),
                         Text(
                           buah.namaBuah ?? "no tittle",
                           style: const TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                              color: Colors.black),
                         )
                       ],
                     ),
