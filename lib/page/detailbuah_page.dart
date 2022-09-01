@@ -11,7 +11,7 @@ class DetailBuahPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.cyan,
         title: Text(buah!.namaBuah!),
         actions: [
           IconButton(
@@ -33,7 +33,7 @@ class DetailBuahPage extends StatelessWidget {
               width: double.infinity,
               child: Image.asset(
                 buah!.gambarBuah!,
-                fit: BoxFit.fill,
+                fit: BoxFit.cover,
               ),
             ),
             Text(
@@ -46,6 +46,7 @@ class DetailBuahPage extends StatelessWidget {
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 18),
             ),
+            const FavoriteButton(),
           ],
         ),
       ),

@@ -11,7 +11,7 @@ class BuahPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Buah-buahan"),
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.purple,
       ),
       body: ListView.builder(
           itemCount: BuahData.itemCount,
@@ -30,8 +30,8 @@ class BuahPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Card(
                   elevation: 7,
-                  color: Colors.blueGrey[500],
-                  shadowColor: Colors.blueGrey,
+                  color: Colors.cyan[500],
+                  shadowColor: Colors.cyan,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
